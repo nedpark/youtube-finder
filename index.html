@@ -15,8 +15,8 @@
       function search() {
         const query = document.getElementById("query").value;
         const encodedQuery = encodeURIComponent(query);
-        const url = `https://www.youtube.com/@jungbub2013/search?query=${encodedQuery}`;
-        // const url = `https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${encodedQuery}`
+        // const url = `https://www.youtube.com/@jungbub2013/search?query=${encodedQuery}`;
+        const url = `https://www.youtube.com/results?search_query=${encodedQuery}`
         console.log(url)
         window.open(url, '_blank');
       }
