@@ -13,7 +13,7 @@
     </form>
     <script>
       function search() {
-        const query = document.getElementById("query").value;
+        const query = "정법시대 " + document.getElementById("query").value;
         const encodedQuery = encodeURIComponent(query);
         // const url = `https://www.youtube.com/@jungbub2013/search?query=${encodedQuery}`;
         const url = `https://www.youtube.com/results?search_query=${encodedQuery}`
